@@ -35,6 +35,7 @@ android {
 dependencies {
 
     implementation project(':app')
+    implementation project(':host')
 
     androidTestImplementation "androidx.test.espresso:espresso-contrib:${versions.espresso}"
     androidTestImplementation "androidx.test:rules:${versions.testRules}"

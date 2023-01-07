@@ -17,6 +17,7 @@
 package com.google.android.samples.dynamicfeatures.ondemand
 
 import android.os.Bundle
+import com.aire.host.Host
 import com.google.android.samples.dynamicfeatures.BaseSplitActivity
 import com.google.android.samples.dynamicfeatures.ondemand.kotlin.R
 
@@ -26,6 +27,8 @@ class KotlinSampleActivity : BaseSplitActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_feature_kotlin)
+
+        Host.log("KotlinSampleActivity onCreate")
     }
 
 }

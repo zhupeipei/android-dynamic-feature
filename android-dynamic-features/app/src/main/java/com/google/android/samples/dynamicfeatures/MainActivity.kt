@@ -27,6 +27,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.constraintlayout.widget.Group
+import com.aire.host.Host
 import com.google.android.play.core.splitcompat.SplitCompat
 import com.google.android.play.core.splitinstall.SplitInstallManager
 import com.google.android.play.core.splitinstall.SplitInstallManagerFactory
@@ -150,6 +151,8 @@ class MainActivity : BaseSplitActivity() {
         setContentView(R.layout.activity_main)
         manager = SplitInstallManagerFactory.create(this)
         initializeViews()
+
+        Host.log("MainActivity onCreate")
     }
 
     override fun onResume() {
