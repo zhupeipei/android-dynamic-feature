@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DynamicFeatureTest</string>
+    <string name="title_dynamicfeature_ondemand">ModuleOnDemand</string>
+    <string name="title_dynamicfeature_atinstalltime">ModuleAtInstallTime</string>
+</resources>
