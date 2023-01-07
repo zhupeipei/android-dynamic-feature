@@ -21,3 +21,4 @@ include ':app',
         ':features:native',
         ':instant:split',
         ':instant:url'
+include ':host'
