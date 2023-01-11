@@ -174,6 +174,7 @@ class MainActivity : BaseSplitActivity() {
     private fun loadAndLaunchModule(name: String) {
         updateProgressMessage(getString(R.string.loading_module, name))
         // Skip loading if the module already is installed. Perform success action directly.
+        Log.i(TAG, "loadAndLaunchModule: " + manager.installedModules.contains(name))
         if (manager.installedModules.contains(name)) {
             updateProgressMessage(getString(R.string.already_installed))
             onSuccessfulLoad(name, launch = true)
