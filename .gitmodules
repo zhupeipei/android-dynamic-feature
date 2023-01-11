@@ -1,0 +1,3 @@
+[submodule "Qigsaw"]
+	path = Qigsaw
+	url = git@github.com:iqiyi/Qigsaw.git
